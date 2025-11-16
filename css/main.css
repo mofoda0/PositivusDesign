@@ -236,7 +236,6 @@
 
     .card{
         width: 100%;
-        height: auto;
         max-width: 45rem;
         padding: 2rem;
     }
@@ -288,14 +287,15 @@
     }
 
     .card .card-img img{
-        width: 100px;
-        margin: auto;
+        display: none;
     }
 }
 
 @media (max-width: 1000px){
 
     .cta-container{
+        flex-direction: column;
+        text-align: center;
         padding: 2rem;
         gap: 2rem;
     }
@@ -310,6 +310,11 @@
 
     .cta-text p{
         font-size: 1.2rem;
+    }
+
+    .cta-img img{
+        width: 50%;
+        margin-left: 5rem;
     }
 }
 
@@ -327,8 +332,7 @@
     }
 
     .cta-img img{
-        width: 80%;
-        margin: auto;
+        display: none;
     }
 }
 
@@ -345,6 +349,10 @@
         padding: 3rem;
         height: auto;
         gap: 2rem;
+    }
+
+    .case-section img{
+        display: none;
     }
 }
 
