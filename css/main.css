@@ -1,0 +1,371 @@
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+}
+
+.services h2{
+    background-color: #B9FF66;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.services p{
+    width: 30%;
+}
+
+.services-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+    }
+
+.card-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card{
+    width: 50rem;
+    height: 17rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.card .card-img img{
+    padding: 2rem;
+}
+
+.card p{
+    position: relative;
+    top: 10%;
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.card1 p,.card4 p{
+    background-color: #B9FF66;
+}
+.card2 p,.card5 p{
+    background-color: #FFFFFF;
+}
+.card3 p{
+    background-color: #FFFFFF;
+}
+.card6 p{
+    background-color: #B9FF66;
+}
+
+.card a{
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.5rem;
+    bottom: 3rem;
+    gap:0.5rem;
+    align-items: center;
+}
+
+
+.card a:hover{
+    transition: 0.2s ease;
+    filter:brightness(50%);
+    color: #B9FF66;
+}
+
+.card1, .card4{
+    background-color: #F3F3F3;
+
+    a span{
+        color: black;
+    }
+}
+
+.card2, .card5{
+    background-color: #B9FF66;
+
+    a span{
+        color: black;
+    }
+
+}
+
+.card3, .card6{
+    background-color: #191A23;
+
+    a span{
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+.cta-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.cta-container{
+    background-color: #F3F3F3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.cta-text{
+    width: 50rem;
+    h3{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    button{
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        border-radius: 1rem;
+        background-color: #191A23;
+        color: white;
+        margin-top:4rem;
+    }
+
+    button:hover{
+        background-color: hsl(234, 17%, 22%);
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+}
+
+.case-studies{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+}
+
+.case-studies h2{
+    background-color: #B9FF66;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.case-studies p{
+    width: 30%;
+}
+
+.case-section{
+    display: flex;
+    margin: auto;
+    width: 85rem;
+    height: 20rem;
+    padding: 5rem;
+    background-color: #191A23;
+    border-radius: 3rem;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.case-section .case-container{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.case-card{
+    width: 15rem;
+}
+
+.case-card a{
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    gap:0.5rem;
+    align-items: center;
+    color: #B9FF66;
+}
+
+.case-card a:hover{
+    filter:brightness(90);
+    transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 1000px){
+
+    .services p{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .services-section{
+        justify-content: center;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        max-width: 45rem;
+        padding: 2rem;
+    }
+
+    .card p{
+        font-size: 1.6rem;
+    }
+
+    .card .card-img img{
+        width: 130px;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 700px){
+
+    .services{
+        text-align: center;
+    }
+
+    .services h2{
+        margin: auto;
+    }
+
+    .card-row{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: left;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .card p{
+        font-size: 1.4rem;
+        top: 0;
+    }
+
+    .card a{
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .card .card-img img{
+        width: 100px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1000px){
+
+    .cta-container{
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .cta-text{
+        width: 100%;
+    }
+
+    .cta-text h3{
+        font-size: 2.3rem;
+    }
+
+    .cta-text p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 700px){
+
+    .cta-container{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .cta-text button{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .cta-img img{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1000px){
+
+    .case-studies p{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .case-section{
+        width: 100%;
+        flex-direction: column;
+        padding: 3rem;
+        height: auto;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 700px){
+
+    .case-section{
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .case-section img{
+        display: none;
+    }
+
+    .case-card{
+        width: 100%;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    .case-card a{
+        font-size: 1rem;
+    }
+}
