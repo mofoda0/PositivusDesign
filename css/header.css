@@ -53,15 +53,17 @@
     transform: scale(1.10);
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1490px){
 
     .header-section{
         gap: 2rem;
         padding: 1.5rem;
+        flex-direction: column;
+        text-align: center;
     }
 
     .header-text{
-        width: 55%;
+        width: 100%;
     }
 
     .header-text h1{
@@ -74,6 +76,8 @@
 
     .header-img{
         margin-right: 0;
+        width: 30rem;
+        margin: auto;
     }
 
     .header-img img{
