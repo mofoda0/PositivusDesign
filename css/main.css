@@ -37,7 +37,7 @@
 }
 
 .card{
-    width: 50rem;
+    width: 650px;
     height: 17rem;
     border: 1px solid black;
     border-radius: 2rem;
@@ -47,6 +47,11 @@
     padding-left: 3rem;
     position: relative;
     font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.01);
 }
 
 .card .card-img img{
